@@ -5,15 +5,7 @@ Pity is a gem that helps test command-line interfaces, terminal apps, REPLs, or 
 ```ruby
 REPL.new do |it|
   it.puts "ls"
-  it.gets
-
-  it.puts "trmnl login"
-  it.expect "Email: "
-  it.puts "nobody@example.com"
-
-  it.expect "Password: "
-  it.puts "superdude"
-  it.gets
+  it.gets # Prints the contents of the `ls` command
 end
 ```
 
